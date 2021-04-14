@@ -1,28 +1,26 @@
 
 
-html {
+html, body {
+
+  margin: 0;
   font-size: 0px;
   font-family: 'Open Sans';
-
-}
-
-
-
-body {
-
   max-width: 1400px;
   background-color: #fffdfd;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+
+
 main {
-  padding: 2rem;
-  max-width: 1200px;
   width: 100%;
   margin: auto;
 }
 
 section {
   margin-bottom: 2rem;
+  padding: 0 100px;
 }
 
 h1 {
@@ -40,17 +38,19 @@ h1 {
 }
 
 .solid {
+
   text-align: center;
   width: 5%;
   height: 1px;
-  outline: none;
-  background: #ff0000;
+  background: #E72424;
+  border: white;
 }
 .solid_white {
   text-align: center;
   width: 5%;
   height: .5px;
   background: #ffffff;
+  border: white;
 }
 h5 {
   text-align: center;
@@ -64,7 +64,6 @@ h5 {
 .tiles-wrapper {
   margin: 0;
   width: calc(100% + 1rem);
-  
 }
 
 .tile_container {
@@ -115,7 +114,7 @@ h5 {
 }
 
 .lorem {
-  width: 350px;
+  width: 85%;
 height: 60px;
 margin: auto;
 font-family: 'Open Sans';
@@ -143,13 +142,54 @@ outline: none;
 background: transparent;
 color: white;
 font-family: 'Open Sans';
+transition: 0.5s;
 }
 .button:hover {
   cursor: pointer;
-    background-color: #ffffff4a;
+  background-color: #ffffff4a;
+  transition: 0.5s;
+
 }
 .down_selection {
-  width: 1400px;
-  height: 326px;
+  position: relative;
+  background-position: center;
+  margin-top: 100px;
+  max-width: 1400px;
+  height: 350px;
   background-image: url("./assets/images/4463307.jpg");
-}
+  background-size: cover;
+  }
+  .background_dimming {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  position: absolute;
+  }
+
+.footer {
+  
+  position: relative;
+  max-width: 1400px;
+  height: 110px;
+  background-color:black;
+  background-size: cover;
+  padding: -100px;
+  }
+  .social_icons_images {
+  position: absolute;
+  justify-content: center;
+  width: 317px;
+  height: 23px;
+  left: 541px;
+  top: 30px;
+  }
+  .copywrite {
+  margin-top: 30px; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  }
